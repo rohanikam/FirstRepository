@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>MW Informal Wear</title>
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<a href="home.html"><img src="Images/mw.jpg" width="50" height="50"></a>
+				<h1>Mens Informal Wear</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="signup.html">SignUp</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li class="current"><a href="home.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="Images/slide1.jpg" height="450"  />  
+          
+        </div>  
+        <div class="showSlide fade">  
+            <img src="Images/slide2.jpg" height="400" />  
+            
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="Images/slide3.jpg" height="400" />  
+            
+        </div>  
+        <div class="showSlide fade">  
+            <img src="Images/slide4.jpg" height="400" />  
+           
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>  
+
+	<section id="news">
+		<div class="container">
+			<h1>Subsribe To Our Newsletter For Latest Offers...</h1>
+			<form>
+				<input type="email" placeholder="Enter Email...">
+				<button type="submit" class="button_1"><strong>Subscribe</strong></button>
+			</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<h2>The Brands You Love</h2>
+			<div class="box">
+				<img src="Images/levis.png">
+			</div>
+			<div class="box">
+				<img src="Images/pepej.jpg" height="85px">
+			</div>
+			<div class="box">
+				<img src="Images/peter.png">
+			</div>
+			<div class="box">
+				<img src="Images/Allensolly.jpg">
+			</div>
+			<div class="box">
+				<img src="Images/USpolo.jpg">
+			</div>
+			<div class="box">
+				<img src="Images/TommyHilfiger1.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section id="boxes-1">
+		<div class="container">
+			<center><h2>TopWear</h2></center>
+			<div class="box-1">
+				<p>
+				<a href="tshirts.html">
+				<img src="Images/Tshirt.jpg"></a>
+			    </p>
+			</div>
+			<div class="box-1">
+				<p>
+				<a href="cshirts.html">
+				<img src="Images/Casualshirt.jpg" height="85px"></a>
+			    </p>
+			</div>
+			<div class="box-1">
+				<p>
+				<a href="hoody.html">
+				<img src="Images/Hoody.jpg"></a>
+			    </p>
+			</div>
+		</div>
+	</section>
+
+	<section id="boxes-2">
+		<div class="container">
+			<center><h2>BottomWear</h2><center>
+			<div class="box-2">
+				<p>
+				<a href="jeans.html">
+				<img src="Images/Jeans.jpg"></a>
+			    </p>
+			</div>
+			<div class="box-2">
+				<p>
+				<a href="ctrousers.html">
+				<img src="Images/Casualtrousers.jpg" height="85px"></a>
+				</p>
+			</div>
+			<div class="box-2">
+				<p>
+				<a href="shorts.html">
+				<img src="Images/Shorts.jpg"></a>
+			    </p>
+			</div>
+		</div>
+	</section>
+
+
+	<footer id="main-footer">
+		<div class="container">
+			<div class="footer-container">
+				<h3>CONNECT WITH US</h3>
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instagram</a></li>
+				</ul>
+			</div>
+			<div class="footer-container">
+				<h3>MAKE MONEY WITH US</h3>
+				<ul>
+					<li><a href="#">Sell on Our Website</a></li>
+					<li><a href="#">Become an Affiliate</a></li>
+					<li><a href="#">Advertise Your Products</a></li>
+				</ul>
+			</div>
+			<div class="footer-container">
+				<h3>Let Us Help You</h3>
+				<ul>
+					<li><a href="#">Your Account</a></li>
+					<li><a href="#">100% Purchase Protection</a></li>
+					<li><a href="#">Android/Ios App Download</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</div>
+			
+			<center><h5>Copyrights &copy; 2019,All Rights Reserved</h5></center>
+
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+  
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+    </script>  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
